@@ -1,13 +1,14 @@
-import React from 'react';
 import './App.css';
-import Verify from './Verify';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import Details from './Details';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/verify" element={<Verify />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/details" element={<Details />}/>
       </Routes>
     </BrowserRouter>
   );

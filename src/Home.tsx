@@ -8,10 +8,14 @@ import Image from 'react-bootstrap/Image';
 import logo from './university_logo.png';
 import image from './image.png'
 import InputGroup from 'react-bootstrap/InputGroup';
+import { useNavigate } from 'react-router-dom';
 
 
-
-const Verify: React.FC = () => {
+const Home: React.FC = () => {
+    const navigate = useNavigate();
+    const onVerifyClick = () => {
+        navigate("/details");
+      };
 
     return (
         <Container className='min-vh-100 light-blue' fluid>
@@ -38,7 +42,7 @@ const Verify: React.FC = () => {
                             />
                         </InputGroup>
 
-                        <Button type="submit" className="btn w-100 custom-btn">
+                        <Button type="submit" className="btn w-100 custom-btn" onClick={ onVerifyClick}>
                             Verify
                         </Button>
                         
@@ -59,4 +63,4 @@ const Verify: React.FC = () => {
     );
 }
 
-export default Verify;
+export default Home;

@@ -13,7 +13,7 @@ code {
 }
 
 .light-blue{
-  background-color: #daeef5;
+  background-color: #def1f7;
 }
 
 .custom-btn{
@@ -24,3 +24,13 @@ code {
   color: #b78416 !important;
 
 }
+
+.full-screen-bg {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
